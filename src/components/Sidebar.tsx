@@ -66,8 +66,12 @@ export const Sidebar = () => {
                                 const Icon = social.icon
 
                                 return (
-                                    <a key={i} href={social.link}>
-                                        <Icon className='size-4'/>
+                                    <a 
+                                    key={i} 
+                                    href={social.link}
+                                    className='hover:text-primary border-2 border-neutral-500 p-2 rounded-full hover:border-primary transition duration-200'
+                                    >
+                                        <Icon className='size-4 '/>
                                     </a>
                                 )
                             })}
