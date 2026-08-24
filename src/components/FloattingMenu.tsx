@@ -24,7 +24,7 @@ export const FloattingMenu = () => {
                     key={link.label}
                     href={link.link} 
                     onClick = {() => setActive(link.link)}
-                    className={cn('text-neutral-400 items-center gap-2 hover:text-primary transition-colors duration-200 mb-6 px-4', active === link.link && 'text-primary')}
+                    className={cn('text-neutral-400 items-center gap-2 hover:text-primary transition-colors duration-200 mb-6 px-4', active === link.link && 'text-primary  ')}
                 >
                     <Icon className='size-5' />
                 </a>
