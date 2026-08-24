@@ -8,46 +8,30 @@ import { motion } from "motion/react"
 import { fadeUp, staggerContainer } from "@/lib/animations"
 
 
-// Components 
+// Constants 
 
-import { Button } from '@/components/ui/button'
-
-// Assets 
-
-import { SparkleIcon  } from "lucide-react"
+import { statsData } from "@/constants"
 
 
-export const Hero = () => {
+export const Stats = () => {
     return (
         <motion.section
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={staggerContainer(0)}
-            className="pt-20"
-            id='hero'
+            viewport={{ once: true, amount: 0.8 }}
+            variants={staggerContainer(0.6)}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20"
         >
-            <motion.p 
+            {statsData.map((stats, i) => (
+               <motion.div 
+                key={i} 
                 variants={fadeUp} 
-                className="flex items-center justify-center py-1 gap-2 border border-neutral-600">
-                <SparkleIcon size={15}/> <span>Introduction</span>
-            </motion.p>
-
-            <motion.h1 variants={fadeUp} className="text=4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md-leading-16">
-                I'm <span className="text-primary">David</span> UI/UX designer and frontend developer
-            </motion.h1>
-
-            <motion.div 
-                variants={fadeUp} 
-                className='mt-5 flex gap-2' >
-                <Button asChild>
-                    <a href='#projects'>My Projects</a>
-                </Button>
-
-                <Button variant='outline'>
-                    Download CV
-                </Button>
-            </motion.div>
+                className="border border-neutral-700 rounded-xl flex justify-center items-center flex-col py-6"
+                >
+                    <p className="text-4xl capitalize font-bold lining-nums">{stats.number}</p>
+                    <p className="text-neutral-300">{stats.label}</p>
+               </motion.div> 
+            ))}
         </motion.section>
     )
 }
