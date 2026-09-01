@@ -24,7 +24,6 @@ export const Testimonials = () => {
     const prev = () => 
         setCurSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length)
 
-    const 
 
     return (
          <motion.section
@@ -60,7 +59,7 @@ export const Testimonials = () => {
 
                         <img 
                             src={testimonials[curSlide].image} 
-                            alt={testimonials.[curSlide].name} 
+                            alt={testimonials[curSlide].name} 
                             className="size-20 rounded-full object-cover"
                         />
 

@@ -19,9 +19,6 @@ createRoot(document.getElementById('root')!).render(
       <FloattingMenu />
       <Profile />
       <App />
-
     </div>
-
-    
   </StrictMode>,
 )
