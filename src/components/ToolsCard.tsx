@@ -15,7 +15,7 @@ export const ToolsCard = ({ tool }: {tool: ToolsType}) => {
     return (
         <motion.div
             variants={fadeUp}
-            className="border border-neutral-700 rounded-md flex-justify-center items-center flex-col py-4"
+            className="border border-neutral-700 rounded-md flex justify-center items-center flex-col py-4"
         >
             <img 
                 src={tool.imgSrc}

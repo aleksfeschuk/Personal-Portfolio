@@ -27,7 +27,7 @@ export const Profile = () => {
 
                 <div className="mt-6">
                     <p className="text-sm text-neutral-300">Specialization:</p>
-                    <p className="text-lg capitalize">Fullstack</p>
+                    <p className="text-lg capitalize">Fullstack, Frontend</p>
                 </div>
 
                 <div>

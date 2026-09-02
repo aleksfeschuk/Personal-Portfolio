@@ -10,7 +10,10 @@ import { fadeUp } from "@/lib/animations";
 
 import { SparkleIcon } from "lucide-react";
 
-export const SectionHeader = ({title, subtitle}: {
+export const SectionHeader = ({
+    title, 
+    subtitle
+}: {
     title: string
     subtitle: string
 }) => {
@@ -18,7 +21,7 @@ export const SectionHeader = ({title, subtitle}: {
         <>
             <motion.p 
                 variants={fadeUp} 
-                className="flex items-center justify-center py-1 gap-2 border-neutral-600 rounded-sm w-32">
+                className="flex items-center justify-center py-1 gap-2 border border-neutral-600 rounded-sm w-32">
                 <SparkleIcon size={15}/> {subtitle}
             </motion.p>
 

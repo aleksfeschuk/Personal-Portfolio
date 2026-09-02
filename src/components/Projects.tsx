@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 // Custom modules
 
-import { fadeUp, staggerContainer } from "@/lib/animations"
+import { staggerContainer } from "@/lib/animations"
 
 
 // Components 
