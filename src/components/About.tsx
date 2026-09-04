@@ -32,14 +32,23 @@ export const About = () => {
                 variants={fadeUp}
                 className="mt-4 text-neutral-300"    
             >
-                About me information
+                I'm a career-switcher who moved from history and research into 
+                software development. After completing a hands-on ReactJS program 
+                with ComIT and the Fullstack Developer Path on Scrimba, I've been 
+                building real projects — from an e-commerce marketplace to an 
+                interactive game — to sharpen my skills in Javascript, React, TypeScript, and 
+                modern web development.
             </motion.p>
 
             <motion.p
                 variants={fadeUp}
                 className="mt-2 text-neutral-300"    
             >
-                About me information
+                I don't have professional work experience yet, but I bring strong 
+                research discipline, attention to detail, and a genuine drive to 
+                keep learning — qualities I'm now applying to writing clean, 
+                well-structured code. I'm currently looking for my first opportunity 
+                to grow as a developer and contribute to a team.
             </motion.p>
 
             <motion.div

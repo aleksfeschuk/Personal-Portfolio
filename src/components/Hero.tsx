@@ -34,7 +34,7 @@ export const Hero = () => {
             </motion.p>
 
             <motion.h1 variants={fadeUp} className="text=4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md-leading-16">
-                I'm <span className="text-primary">Oleksandr</span> Fullstack developer 
+                I'm <span className="text-primary">Oleksandr Feshchuk</span> Fullstack developer 
             </motion.h1>
 
             <motion.div 
